@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+  padding-left: 0;
+}
+
+.chat-container{
+  width: calc(100vw - 40px);
+  height: calc(100vh - 40px);
+  background-color: #C2B9BC;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.sidebar{
+  height: 100vh;
+  max-width: 220px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow: hidden;
+}
+
+.profile-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.profile{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  height: 100px;
+}
+
+.profile-data{
+   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.profile .avatar{ 
+  width: 48px;
+  height: 48px;
+  background-color: black;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.profile .avatar img{
+  width: 48px;
+  object-fit: contain;
+}
+
+.profile .wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  min-width: 80px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.profile .wrapper .name{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.profile .wrapper .status{
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.profile .action-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.action-btn{
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  border: 0px;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.action-btn .action-icon img{
+  width: 32px;
+  object-fit: contain;
+}
+
+.action-btn:last-of-type{
+  margin-right: 0px;
+}
+
+.dialog-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 0px;
+  margin-right: 1px;
+  width: calc(80% - 2px);
+  height: calc(100% - 2px);
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 0px 20px 20px 0px;
+}
+
+.start{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.start .logo{
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.start .logo img {
+  width: 300px;
+  object-fit: contain;
+}
+
+.start h3{
+  text-align: center;
+}
+
+.start p{
+  text-align: center;
+}
+
+.dialog-menu{
+  border-top: 1px solid gray;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.btn-chat{
+  border: 0px;
+  background-color: indigo;
+  color: white;
+  font-size: 24px;
+  padding: 5px 20px 5px 20px;
+  border-radius: 10px;
+}
+
+.chats {
+  margin-top: 20px;
+  border-top: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  overflow-y: scroll;
+  width: 100%;
+  height: calc(100vh - 232px);
+}
+
+.chat {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  border-bottom: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.chat .avatar{
+  width: 36px;
+  height: 36px;
+  border-color: 1px solid gray;
+  border-radius: 18px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.chat .avatar img {
+  width: 36px;
+  object-fit: cover;
+}
+
+.chat .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.chat .wrapper .name{
+  max-width: 100px;
+  font-size: 16px;
+}
+
+.chat .wrapper .status{
+  font-size: 12px;
+}
